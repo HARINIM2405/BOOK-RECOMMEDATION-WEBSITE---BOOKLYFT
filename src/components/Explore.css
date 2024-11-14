@@ -1,0 +1,87 @@
+.explore-home-header {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5)); /* Muted gradient */
+  color: #ffffff;
+  position: fixed;
+  
+  z-index: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Increased padding for higher header */
+}
+
+.explore-home-header .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.explore-home-header .MuiButton-root {
+  margin-left: 10px;
+}
+
+
+/*expolor design*/
+.explore-container {
+  margin: 20px;
+}
+
+.explore-book-section {
+  margin-bottom: 60px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.explore-book-section h3 {
+  font-size: 24px;
+  color: #109789;
+  margin-bottom: 10px;
+  padding-left: 0; /* Remove padding to align text to the left */
+  margin-top: 6px;
+  text-align: left; /* Ensure the text is aligned left */
+}
+
+.explore-book-list {
+  display: flex;
+  overflow-x: scroll; /* Enable scroll */
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  padding-left: 30px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.explore-book-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+}
+
+.explore-book-item {
+  flex: 0 0 150px;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #2d2b2b;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.2s;
+  scroll-snap-align: start;
+}
+
+.explore-book-item:hover {
+  transform: scale(1.05);
+}
+
+.explore-book-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.explore-book-item h4 {
+  font-size: 16px;
+  color: #098175;
+  margin: 5px 0;
+  margin-left: 1px;
+}
+
+.explore-book-item p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}

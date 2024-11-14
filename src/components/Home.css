@@ -1,0 +1,128 @@
+/* Global Styles */
+.home-body {
+  background-color: #0f0e0e; /* Set the background to black */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body extends to cover the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a, button {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Header */
+.home-header {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5)); /* Muted gradient */
+  color: #ffffff;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Increased padding for higher header */
+}
+
+.home-header .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-header .MuiButton-root {
+  margin-left: 10px;
+}
+
+/* Content Section */
+.content-section {
+  padding: 20px 0; /* Reduced padding */
+  margin-top: 100px; /* Added space between header and content section */
+  max-width: 1200px; /* Optional: restrict the width of the content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-section .MuiGrid-root {
+  margin-top: 40px;
+}
+
+.content-section .MuiPaper-root {
+  padding: 30px;
+  background-color: #1f2933;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.content-section .MuiTypography-h5 {
+  color: #357a73;
+}
+
+.content-section .MuiTypography-body1 {
+  color: #a7c8c4;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+ /* background-color: #121212;*/
+  color: #80cbc4;
+  text-align: center;
+  border-top: 1px solid rgba(128, 203, 196, 0.3);
+  margin-top: auto; /* Push footer to the bottom of the page */
+}
+
+footer a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b2dfdb;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .hero-section h3 {
+    font-size: 2rem;
+  }
+  .content-section {
+    padding: 20px; /* Make content section padding more compact on mobile */
+  }
+}
+
+/* Hero Section Container */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* Ensure the section covers the entire viewport */
+  background-color: #000000; /* Dark background for hero section */
+  flex-direction: column;  /* Ensure content aligns vertically if needed */
+}
+
+/* Hero Box */
+.hero-box {
+  padding: 20px;
+  border: 5px solid #20b2aa; /* Border color */
+  border-radius: 8px;
+  text-align: center;
+  width: 60%; /* Adjust the width as needed */
+  background-color: #121212;
+}
+
+/* Hero Title */
+.hero-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Hero Subtitle */
+.hero-subtitle {
+  color: #80cbc4;
+  font-size: 1.25rem;
+  margin-top: 20px;
+}

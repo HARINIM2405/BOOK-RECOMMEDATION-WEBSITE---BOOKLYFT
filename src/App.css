@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a, button {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Header */
+/* Header */
+header {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5));/* Muted gradient */
+  color: #ffffff;
+  position: static;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Increased padding for higher header */
+}
+
+header .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .MuiButton-root {
+  margin-left: 10px;
+}
+
+
+/* Hero Section */
+.hero-section {
+  margin-top: 50px;
+  padding: 80px 0;
+  text-align: left;
+  border: 1px solid rgba(128, 203, 196, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+/* Add these styles to App.css */
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+
+.hero-section h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-weight: 400;
+  color: #80cbc4;
+}
+
+.hero-section .MuiButton-root {
+  background-color: #80cbc4;
+  color: #121212;
+  text-transform: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section .MuiButton-root:hover {
+  background-color: #00796b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Section */
+.content-section {
+  padding: 50px 0;
+}
+
+.content-section .MuiGrid-root {
+  margin-top: 40px;
+}
+
+.content-section .MuiPaper-root {
+  padding: 30px;
+  background-color: #1f2933;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.content-section .MuiTypography-h5 {
+  color: #357a73;
+}
+
+.content-section .MuiTypography-body1 {
+  color: #a7c8c4;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #121212;
+  color: #80cbc4;
+  text-align: center;
+  border-top: 1px solid rgba(128, 203, 196, 0.3);
+}
+
+footer a {
+  color: #80cbc4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b2dfdb;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .hero-section h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Hero Image */
+.hero-image {
+  width: 100%; /* Ensure it takes full width */
+  max-height: 500px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}

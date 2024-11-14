@@ -1,0 +1,48 @@
+/* Apply styles specific to Home1 component */
+.home1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* AppBar customizations */
+.home1 .MuiAppBar-root {
+  background-color: #004d40; /* Dark teal */
+  color: white;
+}
+
+.home1 .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo and title styles */
+.home1 .MuiTypography-h6 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Styling for buttons */
+.home1 .MuiButton-root {
+  margin-left: 1rem;
+}
+
+/* Login button customizations */
+.home1 .MuiButton-contained {
+  border-radius: 20px;
+  padding: 6px 20px;
+  background-color: #80cbc4;
+}
+
+.home1 .MuiButton-contained:hover {
+  background-color: #004d40;
+}
+
+/* Ensuring the image scales properly */
+.home1 img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+

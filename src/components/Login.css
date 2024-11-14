@@ -1,0 +1,87 @@
+/* Ensure the html and body elements take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #202121; /* Changed background color to black */
+}
+
+/* Styling for the login container */
+.login-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  /*background-color: #1f2933/* Prevent the image from repeating */
+}
+
+/* Styling for the login box with transparent black background */
+.login-auth-box {
+  margin-top: 6%;
+  background-color: rgba(0, 0, 0, 0.8); /* Set a darker transparent black for the background */
+  padding: 50px; /* Increase padding for a larger box */
+  border-radius: 10px;
+  border: 2px solid #20B2AA; /* Add a border with blue-green color (light sea green) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: white; /* Text color for readability inside the box */
+  width: 500px; /* Increased width for a larger box */
+  text-align: center; /* Center the text inside the box */
+}
+
+/* Heading inside the login box */
+.login-auth-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px; /* Increase font size of the heading */
+}
+
+/* Input fields inside the login box */
+.login-auth-box input {
+  width: 100%;
+  padding: 12px; /* Increased padding for input fields */
+  margin: 12px 0; /* Increased margin between fields */
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for input background */
+  color: white;
+  font-size: 16px; /* Increased font size for inputs */
+}
+
+/* Button inside the login box */
+.login-auth-box button {
+  width: 60%; /* Slightly wider button */
+  padding: 12px; /* Increased padding for button */
+  background-color: #20B2AA; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px; /* Increased font size for the button */
+}
+
+/* Error message styling */
+.login-error-message {
+  color: #f44336; /* Red color for error messages */
+  margin-top: 10px;
+  font-size: 16px; /* Increased font size for error messages */
+}
+
+/* Center-aligned text */
+.login-center-text {
+  margin-top: 20px;
+}
+
+/* Link styling */
+.login-toggle-link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 16px; /* Increased font size for the toggle link */
+}

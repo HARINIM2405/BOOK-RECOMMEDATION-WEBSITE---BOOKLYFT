@@ -1,0 +1,20 @@
+.about-home-header {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5)); /* Muted gradient */
+  color: #ffffff;
+  position: fixed;
+  
+  z-index: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0; /* Increased padding for higher header */
+}
+
+.about-home-header .MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-home-header .MuiButton-root {
+  margin-left: 10px;
+}
+
